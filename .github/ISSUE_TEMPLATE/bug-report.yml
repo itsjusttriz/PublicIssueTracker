@@ -1,5 +1,9 @@
 name: 'Bug Report'
 description: 'Report an issue with a project. ONE ISSUE PER REPORT'
+title: "[Bug]: "
+labels: ["bug"]
+assignees:
+  - itsjusttriz
 body:
   - type: 'markdown'
     attributes:
