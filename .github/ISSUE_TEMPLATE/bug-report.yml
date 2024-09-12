@@ -19,43 +19,6 @@ body:
         - 'Other...'
     validations:
       required: true
-#  - type: 'input'
-#    id: 'version'
-#    attributes:
-#      label: 'Modpack version'
-#      placeholder: 'ex. 1.1.0'
-#    validations:
-#      required: true
-#  - type: 'dropdown'
-#    id: 'launcher'
-#    attributes:
-#      label: 'Launcher'
-#      description: 'Which launcher are you using to start the modpack?'
-#      options:
-#        - null
-#        - 'FTB App'
-#        - 'CurseForge'
-#        - 'Server'
-#        - 'Other...'
-#    validations:
-#      required: true
-#  - type: 'dropdown'
-#    id: 'modded-dropdown'
-#    attributes:
-#      label: 'Has the pack been modified'
-#      description: 'Have you modified the modpack in any way?'
-#      options:
-#        - null
-#        - 'Yes'
-#        - 'No'
-#    validations:
-#      required: true
-#  - type: 'textarea'
-#    id: 'logs'
-#    attributes:
-#      label: 'Log Files'
-#      description: 'Link(s) to any log files that may help debug your issue'
-#      placeholder: 'https://pste.ch/dotedubine'
   - type: 'textarea'
     id: 'bugdesc'
     attributes:
@@ -85,7 +48,9 @@ body:
     id: 'expectedBehaviour'
     attributes:
       label: 'Expected behaviour'
-      description: 'A clear and concise description of what you expected to happen.'
+      description: 'A clear and concise description of what you expected to happen.
+
+      '
     validations:
       required: true
   - type: 'textarea'
