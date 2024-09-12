@@ -1,0 +1,96 @@
+name: 'Bug Report'
+description: 'Report an issue with a project. ONE ISSUE PER REPORT'
+body:
+  - type: 'markdown'
+    attributes:
+      value: '## If you are having more than one issue, please open separate bug
+        reports'
+  - type: 'dropdown'
+    id: 'ijt-projects-dropdown'
+    attributes:
+      label: 'Project'
+      description: 'What project are you having an issue with?'
+      options:
+        - 'www.itsjusttriz.com'
+        - 'Other...'
+    validations:
+      required: true
+#  - type: 'input'
+#    id: 'version'
+#    attributes:
+#      label: 'Modpack version'
+#      placeholder: 'ex. 1.1.0'
+#    validations:
+#      required: true
+#  - type: 'dropdown'
+#    id: 'launcher'
+#    attributes:
+#      label: 'Launcher'
+#      description: 'Which launcher are you using to start the modpack?'
+#      options:
+#        - null
+#        - 'FTB App'
+#        - 'CurseForge'
+#        - 'Server'
+#        - 'Other...'
+#    validations:
+#      required: true
+#  - type: 'dropdown'
+#    id: 'modded-dropdown'
+#    attributes:
+#      label: 'Has the pack been modified'
+#      description: 'Have you modified the modpack in any way?'
+#      options:
+#        - null
+#        - 'Yes'
+#        - 'No'
+#    validations:
+#      required: true
+#  - type: 'textarea'
+#    id: 'logs'
+#    attributes:
+#      label: 'Log Files'
+#      description: 'Link(s) to any log files that may help debug your issue'
+#      placeholder: 'https://pste.ch/dotedubine'
+  - type: 'textarea'
+    id: 'bugdesc'
+    attributes:
+      label: 'Describe the bug'
+      description: 'A clear and concise description of what the bug is
+
+        '
+    validations:
+      required: true
+  - type: 'textarea'
+    id: 'reproduce'
+    attributes:
+      label: 'Steps to reproduce'
+      description: 'Tell us how we can reproduce the issue'
+      placeholder: '1. Go to ...
+
+        2. Click on ...
+
+        3. Scroll down to ...
+
+        4. See error
+
+        '
+    validations:
+      required: true
+  - type: 'input'
+    id: 'expectedBehaviour'
+    attributes:
+      label: 'Expected behaviour'
+      description: 'A clear and concise description of what you expected to happen.'
+    validations:
+      required: true
+  - type: 'textarea'
+    id: 'screenshots'
+    attributes:
+      label: 'Screenshots'
+      description: 'If applicable, add screenshots to help explain your problem.'
+  - type: 'textarea'
+    id: 'additional'
+    attributes:
+      label: 'Additional information'
+      description: 'Add any other context about the problem here'
